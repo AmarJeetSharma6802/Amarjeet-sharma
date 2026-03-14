@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amarjeet Sharma — Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="noise"></div>
+
+  <nav>
+    <a href="#" class="nav-logo" >AS/</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+      <a href="https://www.linkedin.com/in/amarjeet-sharma-full-stack/" target="_blank" class="nav-cta">
+  Hire Me
+</a>
+  
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section id="hero">
+    <canvas id="three-canvas"></canvas>
+    <div class="grid-bg"></div>
+    <div class="hero-content">
+      <div class="hero-tag">Available for Opportunities</div>
+      <h1 class="hero-name">Amarjeet<br><span class="italic">Sharma.</span></h1>
+      <p class="hero-role">
+        Full Stack Developer — building <span>production-ready</span> web apps since mid-2024.<br>
+        MERN + Next.js specialist. Exploring <span>AI integrations</span> and automation.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-p">↓ View My Work</a>
+        <a href="#contact" class="btn-s">Let's Talk →</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">15+</div>
+        <div class="stat-label">Projects Built</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">1+</div>
+        <div class="stat-label">Yr Experience</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">3</div>
+        <div class="stat-label">Client Projects</div>
+      </div>
+    </div>
+    <div class="scroll-hint"><span class="scroll-line"></span><span>Scroll to explore</span></div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section id="about">
+    <div class="section-label">Who I Am</div>
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <div class="about-img-frame">
+          <img src="https://res.cloudinary.com/futurecoder/image/upload/v1773383677/far5xhqjgy93euuyhzdv.jpg"
+            alt="Amarjeet Sharma" />
+          <div class="about-corner"></div>
+          <div class="about-badge">📍 New Delhi, India</div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="section-title">Full Stack <em>Developer</em></div>
+        <div class="about-text">
+          <p>Started coding in <strong>mid-2024</strong> out of pure curiosity — wanted to understand how the web works
+            behind the scenes. Within months that turned into real client projects and production platforms.</p>
+          <p>In <strong>2025</strong>, I leveled up — Next.js App Router, Python, PostgreSQL, Docker, AI API
+            integrations, and more complete end-to-end systems.</p>
+          <p>Currently exploring <strong>n8n</strong> automation and beginning my journey into <strong>Deep Learning
+              with PyTorch.</strong></p>
+          <div class="traits">
+            <div class="trait">Builds end-to-end — UI to backend to deployment</div>
+            <div class="trait">3 real client projects delivered and live</div>
+            <div class="trait">Open to full-time, freelance &amp; remote roles</div>
+            <div class="trait">Always learning — Deep Learning is next</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SKILLS ═══ -->
+  <section id="skills">
+    <div class="section-label">What I Know</div>
+    <div class="section-title">Technical <em>Skills</em></div>
+    <div class="skills-grid reveal">
+
+      <div class="skill-cat">
+        <div class="skill-cat-title">⟨/⟩ Frontend</div>
+        <div class="skill-icons">
+          <div class="sii"><img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+              alt="HTML5" /><span>HTML5</span></div>
+          <div class="sii"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+              alt="CSS3" /><span>CSS3</span></div>
+          <div class="sii"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+              alt="JS" /><span>JavaScript</span></div>
+          <div class="sii"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+              alt="React" /><span>React.js</span></div>
+          <div class="sii"><img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg"
+              alt="Next.js" style="filter:invert(1);" /><span>Next.js</span></div>
+          <div class="sii"><img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+              alt="TS" /><span>TypeScript</span></div>
+          <div class="sii"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+              alt="Tailwind" /><span>Tailwind</span></div>
+          <div class="sii"><img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain.svg"
+              alt="Bootstrap"
+              style="filter:brightness(0.5) sepia(1) saturate(10) hue-rotate(240deg) brightness(1.5);" /><span>Bootstrap</span>
+          </div>
+          <div class="sii"><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYUASnkyRvUnJRW94LrX7WDDB0aJB3k15O2A&s"
+              alt="GSAP" /><span>GSAP</span></div>
+        </div>
+      </div>
+
+      <div class="skill-cat">
+        <div class="skill-cat-title">⚙️ Backend</div>
+        <div class="skill-icons">
+          <div class="sii"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+              alt="Node" /><span>Node.js</span></div>
+          <div class="sii"><img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg"
+              alt="Express" style="filter:invert(1);" /><span>Express</span></div>
+          <div class="sii"><img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+              alt="Python" /><span>Python</span></div>
+          <div class="sii"><img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-plain.svg" alt="Django"
+              style="filter:invert(0.5) sepia(1) hue-rotate(100deg) brightness(1.5);" /><span>Django</span></div>
+          <div class="sii"><img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg"
+              alt="Docker" /><span>Docker</span></div>
+          <div class="sii"><img src="https://mohit-portfolio.vercel.app/assets/postman.893a78b8.png"
+              alt="Postman" /><span>Postman</span></div>
+          <div class="sii"><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8AuRjqKVazQ0czBF4FNZ6V20gUExk5iGGLQ&s"
+              alt="REST APIs" /><span>REST APIs</span></div>
+        </div>
+      </div>
+
+      <div class="skill-cat">
+        <div class="skill-cat-title">🗄️ Database</div>
+        <div class="skill-icons">
+          <div class="sii"><img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg"
+              alt="MongoDB" /><span>MongoDB</span></div>
+          <div class="sii"><img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg"
+              alt="PostgreSQL" /><span>PostgreSQL</span></div>
+          <div class="sii"><img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain.svg"
+              alt="Firebase" /><span>Firebase</span></div>
+          <div class="sii"><img src="https://mohit-portfolio.vercel.app/assets/mongoose.20aad1bc.png"
+              alt="Mongoose" /><span>Mongoose</span></div>
+        </div>
+      </div>
+
+      <div class="skill-cat">
+        <div class="skill-cat-title">🔐 Auth &amp; State</div>
+        <div class="skill-icons">
+          <div class="sii"><img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
+              alt="Redux" /><span>Redux</span></div>
+          <div class="sii"><img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"
+              alt="Git" /><span>Git</span></div>
+          <div class="sii"><img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg"
+              alt="GitHub" style="filter:invert(1);" /><span>GitHub</span></div>
+          <div class="sii"><img
+              src="https://res.cloudinary.com/futurecoder/image/upload/v1765690318/f2khfjrlxhkuem0zx5k0.png"
+              alt="NextAuth" style="filter:invert(1);" /><span>NextAuth</span></div>
+          <div class="sii"><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeDCupFadz1OG5i-zpiFMrVVQQMRV33oQeBw&s"
+              alt="Clerk" /><span>Clerk</span></div>
+          <div class="sii"><img
+              src="https://ik.imagekit.io/ably/ghost/prod/2019/05/Screenshot-2019-05-14-at-13.53.46.png?tr=w-1728,q-50"
+              alt="JWT" style="filter:invert(1);" /><span>JWT</span></div>
+        </div>
+      </div>
+
+      <div class="skill-cat">
+        <div class="skill-cat-title">🤖 AI &amp; Automation</div>
+        <div class="skill-icons">
+          <span class="skill-tag">AI API Integration</span>
+          <span class="skill-tag">Prompt Engineering</span>
+          <span class="skill-tag">n8n <span class="new-chip">Learning</span></span>
+          <span class="skill-tag">Workflow Design</span>
+        </div>
+        <p class="skill-note">Exploring n8n — building small automation pipelines, learning to connect APIs and automate
+          tasks. Still early stage.</p>
+      </div>
+
+      <div class="skill-cat" style="border-color:rgba(124,58,237,0.35);">
+        <div class="skill-cat-title" style="color:#a78bfa;">🧠 Currently Learning</div>
+        <div class="skill-icons">
+          <div class="sii"><img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pytorch/pytorch-original.svg"
+              alt="PyTorch" /><span style="color:#a78bfa;">PyTorch</span></div>
+          <span class="learn-badge">Deep Learning</span>
+          <span class="learn-badge">ROS</span>
+          <span class="learn-badge">Computer Vision</span>
+        </div>
+        <p class="skill-note" style="color:#7c6fa8;">Completed class 1 of Deep Learning with PyTorch. Very early —
+          genuinely excited about this path.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ PROJECTS ═══ -->
+  <section id="projects">
+    <div class="section-label">What I've Built</div>
+    <div class="section-title">All <em>Projects</em></div>
+    <div class="projects-grid">
+
+      <div class="project-card reveal"><img class="project-img"
+          src="https://res.cloudinary.com/futurecoder/image/upload/v1758814634/uof85hs7pzp6egzflq00.png"
+          alt="Pal Engineering" />
+        <div class="project-overlay">
+          <div class="project-num">01</div>
+          <div class="ptag client">Client</div>
+          <div class="project-title">Pal Engineering</div>
+          <div class="project-desc">Crane services website — Next.js, Clerk auth, GSAP animations, dynamic SEO, backend
+            APIs.</div><a href="https://crane-website-woad.vercel.app/" target="_blank" class="project-link">View Live
+            ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal"><img class="project-img"
+          src="https://res.cloudinary.com/futurecoder/image/upload/v1767452654/yjslak8rmaw2msyx8csz.png"
+          alt="Real Estate" />
+        <div class="project-overlay">
+          <div class="project-num">02</div>
+          <div class="ptag client">Client</div>
+          <div class="project-title">Real-Estate Platform</div>
+          <div class="project-desc">Admin/user roles, NextAuth, Swiper UI, Nodemailer email automation for listings.
+          </div><a href="https://real-estate-eta-snowy.vercel.app/" target="_blank" class="project-link">View Live ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal"><img class="project-img"
+          src="https://res.cloudinary.com/futurecoder/image/upload/v1763531865/vl5pxddp02hxqog0vyjd.png"
+          alt="Wedding Photography" />
+        <div class="project-overlay">
+          <div class="project-num">03</div>
+          <div class="ptag">Full Stack</div>
+          <div class="project-title">Wedding Photography</div>
+          <div class="project-desc">Next.js + MongoDB, dynamic galleries, secure forms, API routes, SEO-friendly
+            structure.</div><a href="https://wedding-photo-graphy.vercel.app/" target="_blank" class="project-link">View
+            Live ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal"><img class="project-img"
+          src="https://res.cloudinary.com/futurecoder/image/upload/v1749791398/t8dxx7kioz38dvp2voha.png"
+          alt="Amazon Clone" />
+        <div class="project-overlay">
+          <div class="project-num">04</div>
+          <div class="ptag">Full Stack</div>
+          <div class="project-title">Amazon Clone</div>
+          <div class="project-desc">Next.js App Router, Clerk auth, dynamic API routes, pixel-perfect shopping UI.</div>
+          <a href="https://amazon-tau-two.vercel.app/" target="_blank" class="project-link">View Live ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal"><img class="project-img"
+          src="https://res.cloudinary.com/futurecoder/image/upload/v1739025489/uploads/xkevquhw752viwtqcj1t.png"
+          alt="Blinkit" />
+        <div class="project-overlay">
+          <div class="project-num">05</div>
+          <div class="ptag">Full Stack</div>
+          <div class="project-title">Blinkit Clone</div>
+          <div class="project-desc">React + Redux quick-commerce — categories, smooth UI, SEO optimized, fast loads.
+          </div><a href="https://blinkit-clone-c3b3.onrender.com/" target="_blank" class="project-link">View Live ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal"><img class="project-img"
+          src="https://res.cloudinary.com/futurecoder/image/upload/v1736487388/uploads/zgo0kcmbbgfvtztt29rm.png"
+          alt="Nike" />
+        <div class="project-overlay">
+          <div class="project-num">06</div>
+          <div class="ptag">Frontend</div>
+          <div class="project-title">Nike Clone</div>
+          <div class="project-desc">React + Redux e-commerce with cart, checkout, responsive design, state management.
+          </div><a href="https://nike-clone-orpin.vercel.app/" target="_blank" class="project-link">View Live ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal"><img class="project-img"
+          src="https://res.cloudinary.com/futurecoder/image/upload/v1736488495/uploads/e6xmyvwik6qzcnxxkns1.png"
+          alt="Adidas" />
+        <div class="project-overlay">
+          <div class="project-num">07</div>
+          <div class="ptag">Frontend</div>
+          <div class="project-title">Adidas Clone</div>
+          <div class="project-desc">React + Redux with auth, product display, cart and checkout — fully responsive.
+          </div><a href="https://adidas-clone-pink.vercel.app/" target="_blank" class="project-link">View Live ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal"><img class="project-img"
+          src="https://res.cloudinary.com/futurecoder/image/upload/v1749791548/y2sjyuye1oixpasoazmn.png"
+          alt="Password Manager" />
+        <div class="project-overlay">
+          <div class="project-num">08</div>
+          <div class="ptag">React</div>
+          <div class="project-title">Password Manager</div>
+          <div class="project-desc">React app — localStorage, visibility toggle, edit/delete, form validation, Toastify
+            feedback.</div><a href="https://password-manager-dusky-two.vercel.app/" target="_blank"
+            class="project-link">View Live ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal"><img class="project-img"
+          src="https://res.cloudinary.com/futurecoder/image/upload/v1731934210/uploads/no7na9cvmwvi5tz4ubfp.png"
+          alt="YouTube Backend" />
+        <div class="project-overlay">
+          <div class="project-num">09</div>
+          <div class="ptag backend">Backend</div>
+          <div class="project-title">YouTube Backend</div>
+          <div class="project-desc">Node.js + Express — video uploads, user auth, video management APIs, comments
+            system.</div><a href="https://github.com/AmarJeetSharma6802/You-tube-backend-Clone" target="_blank"
+            class="project-link">View Code ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal"><img class="project-img"
+          src="https://res.cloudinary.com/futurecoder/image/upload/v1731934126/uploads/rz0unwjxemotz1asajdq.png"
+          alt="ClikCrave" />
+        <div class="project-overlay">
+          <div class="project-num">10</div>
+          <div class="ptag client">Client</div>
+          <div class="project-title">ClikCrave</div>
+          <div class="project-desc">Digital marketing platform — React frontend + Express backend for a real client.
+          </div><a href="https://clik-crave.vercel.app/" target="_blank" class="project-link">View Live ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal"><img class="project-img"
+          src="https://res.cloudinary.com/futurecoder/image/upload/v1751874264/h7sehrk6j5xdrsk06d78.png"
+          alt="Interio Mate" />
+        <div class="project-overlay">
+          <div class="project-num">11</div>
+          <div class="ptag">Frontend</div>
+          <div class="project-title">Interio Mate</div>
+          <div class="project-desc">Interior design site — HTML/CSS/JS with elegant layouts and smooth animations.</div>
+          <a href="https://interio-mate.vercel.app/" target="_blank" class="project-link">View Live ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal"><img class="project-img"
+          src="https://res.cloudinary.com/futurecoder/image/upload/v1731910761/uploads/mmelthdoxvnffvuhdi1c.png"
+          alt="User Management" />
+        <div class="project-overlay">
+          <div class="project-num">12</div>
+          <div class="ptag">Full Stack</div>
+          <div class="project-title">Account Management</div>
+          <div class="project-desc">React + Express — registration, login, password change, profile update,
+            security-focused.</div><a href="https://smart-hire-fronted.vercel.app/" target="_blank"
+            class="project-link">View Live ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal"><img class="project-img"
+          src="https://res.cloudinary.com/futurecoder/image/upload/v1731933972/uploads/fcmmnpszniymplhlh5mx.png"
+          alt="iPhone Clone" />
+        <div class="project-overlay">
+          <div class="project-num">13</div>
+          <div class="ptag">Frontend</div>
+          <div class="project-title">iPhone Clone</div>
+          <div class="project-desc">Responsive iPhone interface — interactive controls, event handling, simulated iPhone
+            functions.</div><a href="https://i-phone-clone-hazel.vercel.app/" target="_blank" class="project-link">View
+            Live ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal"><img class="project-img"
+          src="https://res.cloudinary.com/futurecoder/image/upload/v1731910642/uploads/tdel48c74rsin95huv7c.png"
+          alt="Netflix Clone" />
+        <div class="project-overlay">
+          <div class="project-num">14</div>
+          <div class="ptag">Frontend</div>
+          <div class="project-title">Netflix Clone</div>
+          <div class="project-desc">HTML/CSS Netflix UI — dynamic homepage, thumbnails, carousels, hover animations.
+          </div><a href="https://netflix-fronted-clone-git-main-amarjeetsharma6802s-projects.vercel.app/"
+            target="_blank" class="project-link">View Live ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal"><img class="project-img"
+          src="https://res.cloudinary.com/futurecoder/image/upload/v1763532232/czm589ydqipgshgv5zrn.png"
+          alt="Portfolio" />
+        <div class="project-overlay">
+          <div class="project-num">15</div>
+          <div class="ptag">Portfolio</div>
+          <div class="project-title">Developer Portfolio</div>
+          <div class="project-desc">Personal portfolio built to showcase projects, skills and connect with clients and
+            employers.</div><a href="https://portfolio-beta-dusky-34.vercel.app/" target="_blank"
+            class="project-link">View Live ↗</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ JOURNEY ═══ -->
+  <section id="journey">
+    <div class="section-label">My Journey</div>
+    <div class="section-title">How I Got <em>Here</em></div>
+    <div class="journey-grid">
+      <div class="journey-text reveal">
+        <p>Started in <strong>mid-2024</strong> — zero experience, just curiosity. Built Netflix and iPhone clones first
+          to understand how frontend actually works. Kept going from there.</p>
+        <p>By end of 2024, I was deep in the MERN stack — React, Node, Express, MongoDB. Built major clones (Blinkit,
+          Nike, Adidas, Amazon) to understand scalable architecture, not just copy UI.</p>
+        <p>In <strong>2025</strong>, real things started happening — first client projects (Pal Engineering, Real
+          Estate, ClikCrave), Next.js App Router, Docker. Started deploying actual production platforms.</p>
+        <p>Currently expanding into automation with <strong>n8n</strong> and exploring <strong> Deep Learning with
+            PyTorch.</strong> Early in the journey — but excited about building intelligent systems in the future.</p>
+      </div>
+      <div class="timeline reveal">
+        <div class="tl-item">
+          <div class="tl-date">Mid-2024 — Start</div>
+          <div class="tl-title">First Lines of Code</div>
+          <div class="tl-desc">HTML, CSS, JS. Built Netflix and iPhone clones to understand frontend fundamentals. Pure
+            curiosity-driven start.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">Late 2024</div>
+          <div class="tl-title">MERN Stack Deep Dive</div>
+          <div class="tl-desc">React, Node.js, Express, MongoDB, Redux Toolkit. Built Blinkit, Nike, Adidas, Amazon
+            clones and YouTube backend to deeply understand APIs and state.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">Early 2025</div>
+          <div class="tl-title">Next.js + Python + Real Clients</div>
+          <div class="tl-desc">Next.js App Router, TypeScript, Clerk. First 3 real client projects
+            delivered live. Added Docker.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2025 — Ongoing</div>
+          <div class="tl-title">Production Platforms + AI</div>
+          <div class="tl-desc">
+            Built a Real Estate platform with admin roles and automated email workflows.
+            Developed Cipher SQL Studio with AI-powered SQL query hints.
+            Implemented n8n automation workflows in a Doctor Consultant platform.
+          </div>
+        </div>
+        <div class="tl-item now">
+          <div class="tl-date">Now ← I am here</div>
+          <div class="tl-title">Deep Learning </div>
+          <div class="tl-desc">Currently exploring PyTorch and Deep Learning concepts while building a strong foundation
+            in AI.
+            Also looking into ROS for future robotics projects.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section id="contact">
+    <div class="section-label">Get In Touch</div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="contact-info">
+          <h2>Let's Build <em>Something</em></h2>
+          <p>Open to full-time roles, freelance projects, and interesting collaborations. Have an idea or an opportunity
+            — let's talk.</p>
+          <div class="c-links">
+            <a href="mailto:amarsharma6802@gmail.com" class="c-link">
+              <div class="c-icon">✉</div>
+              <div><small>Email</small>amarsharma6802@gmail.com</div>
+            </a>
+            <a href="https://github.com/AmarJeetSharma6802" target="_blank" class="c-link">
+              <div class="c-icon">⌥</div>
+              <div><small>GitHub</small>AmarJeetSharma6802</div>
+            </a>
+            <a href="https://portfolio-beta-dusky-34.vercel.app/" target="_blank" class="c-link">
+              <div class="c-icon">◈</div>
+              <div><small>Portfolio</small>portfolio-beta-dusky-34.vercel.app</div>
+            </a>
+            <a class="c-link">
+              <div class="c-icon">📍</div>
+              <div><small>Location</small>New Delhi, India · Remote Available</div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORM — connected to real API -->
+      <div class="reveal">
+        <form class="form" onsubmit="handleSubmit(event)">
+          <div class="f-row">
+            <input class="fi" id="nameId" type="text" placeholder="Your Name" required />
+            <input class="fi" id="email" type="email" placeholder="Your Email" required />
+          </div>
+          <input class="fi" id="phone" type="tel" placeholder="Phone Number" required />
+          <textarea class="fta" id="message" placeholder="Your message..." required></textarea>
+          <button class="fsub" id="submitBtn" type="submit">Send Message →</button>
+        </form>
+        <div class="form-ok" id="formOk"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo">Amarjeet Sharma</div>
+    <div class="footer-text">© 2025 · Full Stack Developer · New Delhi, India</div>
+    <div class="footer-text" style="color:var(--accent);">amarsharma6802@gmail.com</div>
+  </footer>
+
+  <script defer src="index.js"></script>
+</body>
+
+</html>
